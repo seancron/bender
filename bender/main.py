@@ -20,9 +20,3 @@ class SlackBot(object):
                 event_received.send(self, event=event)
                 if event.type == 'message':
                     message_received.send(self, event=event)
-
-
-if __name__ == '__main__':
-    from .plugins import demo
-    bot = SlackBot()
-    bot.run()
