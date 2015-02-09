@@ -26,7 +26,7 @@ setup(
 
     keywords='slack chat api',
 
-    packages=['bender'],
+    packages=['bender', 'bender.plugins'],
     install_requires=['slack-rtm', 'blinker>=1.3'],
     dependency_links=[
         'git+https://github.com/seancron/slack-rtm.git'
